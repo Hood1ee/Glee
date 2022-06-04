@@ -798,8 +798,127 @@
     }
 }
 
+.rates {
+    padding: 80px 0;
+    background-color: #fcd7b6;
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__img {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    &__stats {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 32px;
+        color: #243f4d;
+        margin-bottom: 20px;
+    }
+    &__text {
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 32px;
+        color: #243f4d;
+    }
+    &__item {
+        text-align: center;
+    }
+}
 
-
+.team {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    &__inner {
+        display: flex;
+    }
+    &__info {
+        max-width: 300px;
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 32px;
+        margin-bottom: 30px;
+        color: #243f4d;
+    }
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        color: #243f4d;
+    }
+    &__link {
+        @extend %dmsans-500;
+        font-size: 15px;
+        line-height: 55px;
+        background-color: #a3bbc8;
+        border-radius: 5px;
+        padding: 20px 60px 20px 20px;
+        color: #edf1f4;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/icons/team-arrow.svg);
+            right: 25px;
+            top: 40%;
+            width: 15px;
+            height: 11px;
+        }
+    } 
+    &__content {
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 100px 30px;
+    }
+    &__content-item {
+        position: relative;
+    }
+    &__content-box {
+        width: 330px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        justify-content: space-around;
+        position: absolute;
+        bottom: -64px;
+        box-shadow: 2px 2px 5px #fbfbfb;
+    }
+    &__content-name {
+        color: #5c7885;
+        margin-bottom: 5px;
+        font-size: 22px;
+        line-height: 26px;
+        @extend %dmsans-700;
+    }
+    &__content-info {
+        font-size: 16px;
+        line-height: 30px;
+        @extend %rubik-400;
+        color: #8e90a1;
+    }
+    &__content-links {
+        display: flex;
+    }
+    &__content-inst {
+        padding: 12px;
+        border-radius: 50%;
+        background-color: #f6f6f6;
+        margin-right: 7px;
+    }
+    &__content-google {
+        padding: 13px 9px;
+        border-radius: 50%;
+        background-color: #f6f6f6;
+    }
+}
   
 
 
