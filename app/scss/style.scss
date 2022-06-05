@@ -919,8 +919,163 @@
         background-color: #f6f6f6;
     }
 }
-  
 
+.contact {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    &__sub-title {
+        text-align: center;
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 20px;
+            color: #a3bbc8;
+    }
+    &__title {
+        text-align: center;
+        @extend %dmsans-700;
+        font-size: 35px;
+        line-height: 57px;
+        margin-bottom: 70px;
+        color: #436372;
+    }
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+        height: 380px;
+        background-color: #fbfbfb;
+        transition: all .3s;
+        &:hover {
+            border: 3px solid #a3bbc8;
+            .contact__item-svg {
+                background-color: #a3bbc8;
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+            
+        }
+    }
+    &__item-svg {
+        margin-top: 70px;
+        margin-bottom: 60px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    }
+    &__item-title {
+        @extend %dmsans-700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #222222;
+        margin-bottom: 20px;
+    }
+    &__item-adress {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        width: 170px;
+        color: #565872;
+    }
+    &__item-mainphone {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+    }
+    &__item-mainemail {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;  
+    }
+    &__item-email {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;  
+    }
+    &__item-mobile {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+    }
+    &__form-inner {
+        display: flex;
+    }
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+    &__input-name {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 20px;
+        width: 48%;
+        border: none;
+        background-color: #fafafa;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__textarea {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 20px;
+        width: 100%;
+        margin: 25px 0 30px;
+        min-height: 175px;
+        resize: none;
+        background-color: #fafafa;
+        border: none;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/icons/contact-chat.svg);
+            width: 18px;
+            height: 15px;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__btn {
+        font-size: 15px;
+        background-color: #a3bbc8;
+        border-radius: 5px;
+        padding: 18px 45px 20px 45px;
+        color: #edf1f4;
+        cursor: pointer;    
+        border: none;
+    }
+}
+
+
+  
 
 @import 'media';
 
